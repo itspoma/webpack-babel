@@ -4,16 +4,23 @@ const ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/main.js',
+  context: __dirname + '/src/pages',
+  entry: {
+    landing: './landing.js',
+    about: './about.js'
+  },
 
   output: {
-    path: './web/assets',
-    filename: 'bundle.js'
+    path: __dirname + '/web/assets',
+    filename: '[name].min.js',
+    library: '[name]'
   },
 
   watch: ENV == 'development',
 
-  plugins: [],
+  plugins: [
+    new webpack.NoErrorsPlugin(),
+  ],
 
   module: {
     loaders: [{
