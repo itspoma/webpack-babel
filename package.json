@@ -2,7 +2,8 @@
   "name": "webpack-babel",
   "scripts": {
     "server": "node_modules/.bin/http-server web/",
-    "build": "node_modules/.bin/webpack"
+    "build": "node_modules/.bin/webpack",
+    "build-verbose": "node_modules/.bin/webpack --display-modules -v"
   },
   "dependencies": {
     "babel-core": "^6.10.4",
