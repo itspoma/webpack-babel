@@ -1,5 +1,7 @@
 'use strict';
 
-let logger = require('./components/logger/logger.js');
+import logger from './components/logger/logger.js';
 
 logger('main!');
+
+exports.logger = logger;

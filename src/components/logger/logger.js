@@ -1,5 +1,5 @@
 'use strict';
 
-module.exports = function (message) {
+export default function (message) {
   console.log('INFO', message);
 }

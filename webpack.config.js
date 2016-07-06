@@ -2,7 +2,19 @@
 
 module.exports = {
   entry: './src/main.js',
+
   output: {
-    filename: './dest/bundle.js'
+    path: './dest',
+    filename: 'bundle.js'
+  },
+
+  module: {
+    loaders: [{
+      test: /\.js$/,
+      loader: 'babel',
+      query: {
+        presets: ['es2015']
+      }
+    }]
   }
 }
