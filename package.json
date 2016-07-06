@@ -1,0 +1,11 @@
+{
+  "name": "webpack-babel",
+  "scripts": {
+    "server": "node_modules/.bin/http-server",
+    "build": "node_modules/.bin/webpack"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "webpack": "^1.13.1"
+  }
+}
