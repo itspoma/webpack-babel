@@ -1,7 +1,7 @@
 {
   "name": "webpack-babel",
   "scripts": {
-    "server": "node_modules/.bin/http-server",
+    "server": "node_modules/.bin/http-server web/",
     "build": "node_modules/.bin/webpack"
   },
   "dependencies": {

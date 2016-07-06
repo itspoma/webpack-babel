@@ -1,6 +1,6 @@
 !.keep
 
-node_modules/
-dest/
+web/assets/
 
+node_modules/
 npm-debug.log
