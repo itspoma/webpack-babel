@@ -1,0 +1,17 @@
+{
+  "parse": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "installedESLint": true,
+  "plugins": [],
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended"
+  ]
+}

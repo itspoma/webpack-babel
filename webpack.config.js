@@ -26,13 +26,24 @@ module.exports = {
   ],
 
   module: {
+    preLoaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'eslint-loader'
+    }],
     loaders: [{
       test: /\.js$/,
-      loader: 'babel',
+      exclude: /node_modules/,
+      loader: 'babel-loader',
       query: {
         presets: ['es2015']
       }
     }]
+  },
+
+  eslint: {
+    failOnWarning: true,
+    failOnError: true
   }
 }
 

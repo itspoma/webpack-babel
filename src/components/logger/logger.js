@@ -1,5 +1,4 @@
-'use strict';
-
 export default function (message) {
-  alert('INFO' + message);
+  const tpl = ['INFO', message].join('');
+  alert(tpl);
 }
